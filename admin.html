@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Editor de carta · La Ofrenda</title>
+  <link rel="icon" href="assets/logo/logo-4.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body { font-size: 15px; }
+    .barra { position: sticky; top: 0; z-index: 30; background: #000; border-bottom: 1px solid var(--linea); }
+    .barra .wrap { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding-block: 12px; }
+    .barra img { height: 40px; }
+    .estado { color: var(--gris); font-size: .8rem; margin-left: auto; }
+    .estado.sucio { color: #f2c36b; }
+    .btn { padding: 11px 18px; font-size: .68rem; }
+    .adm-tabs { display: flex; gap: 8px; flex-wrap: wrap; padding: 18px 0 8px; }
+    .adm-tabs .tab { margin-right: 6px; }
+    .caja { background: var(--panel); border: 1px solid var(--linea); padding: 16px; margin: 12px 0; }
+    .caja.oculto { opacity: .55; border-style: dashed; }
+    .caja.propuesta { border-color: var(--salvia); }
+    .fila { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; margin-top: 10px; }
+    label { display: grid; gap: 4px; font: 700 .66rem var(--texto); letter-spacing: .1em; text-transform: uppercase; color: var(--gris); }
+    input[type=text], input[type=number], textarea, select { background: #000; border: 1.5px solid var(--linea); color: var(--crema); padding: 9px 11px; font: 500 .9rem var(--texto); width: 100%; border-radius: 0; }
+    input:focus, textarea:focus, select:focus { outline: none; border-color: var(--lima); }
+    textarea { resize: vertical; min-height: 56px; }
+    .f1 { flex: 1 1 220px; } .f2 { flex: 2 1 320px; } .fp { flex: 0 0 110px; }
+    .chk { display: inline-flex; flex-direction: row; align-items: center; gap: 6px; text-transform: none; letter-spacing: 0; font-size: .82rem; color: var(--crema); font-weight: 600; }
+    .chk input { accent-color: var(--lima); width: 17px; height: 17px; }
+    .peligro { border-color: #7a3030; color: #f19b9b; }
+    h2.t { font-family: var(--texto); font-size: 1.1rem; letter-spacing: .1em; text-transform: uppercase; color: var(--lima-claro); margin: 24px 0 4px; }
+    .ayuda-adm { color: var(--gris); font-size: .85rem; max-width: 70ch; }
+    .tier { font: 700 .7rem var(--texto); color: var(--lima-claro); text-transform: uppercase; letter-spacing: .1em; padding-bottom: 12px; }
+    dialog { background: var(--panel); color: var(--crema); border: 1px solid var(--lima); max-width: 560px; }
+    dialog::backdrop { background: rgba(0,0,0,.7); }
+    dialog ol { padding-left: 20px; } dialog li { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <div class="barra"><div class="wrap">
+    <img src="assets/logo/logo-4.svg" alt="La Ofrenda">
+    <strong>Editor de carta</strong>
+    <span class="estado" id="estado">Sin cambios</span>
+    <a class="btn btn-borde" href="carta.html?borrador" target="_blank">Ver borrador</a>
+    <button class="btn btn-lima" id="descargar" type="button">Descargar carta</button>
+  </div></div>
+
+  <main class="wrap">
+    <p class="ayuda-adm" style="margin-top:22px">Cambia precios, nombres, descripciones y alérgenos. Todo se guarda como borrador en este navegador. Cuando termines, pulsa <b>Descargar carta</b> y sigue los pasos para publicarla. Escribe siempre español e inglés; las demás lenguas se toman de las traducciones del sitio.</p>
+    <div class="adm-tabs" id="adm-tabs"></div>
+    <div id="panel"></div>
+    <div class="caja" style="margin-top:40px">
+      <div class="fila">
+        <button class="btn btn-borde peligro" id="descartar" type="button">Descartar borrador</button>
+        <span class="ayuda-adm">Vuelve a la última carta publicada.</span>
+      </div>
+    </div>
+  </main>
+
+  <dialog id="pasos">
+    <h3 style="margin-top:0">Carta descargada ✔</h3>
+    <p>Se descargó <b>carta-data.js</b>. Para publicarla:</p>
+    <ol>
+      <li>Reemplaza el archivo <code>data/carta-data.js</code> del sitio por el que acabas de descargar.</li>
+      <li>Sube el cambio (commit en GitHub o arrastra la carpeta a tu hosting).</li>
+      <li>En 1–2 minutos la carta y el QR muestran los nuevos precios.</li>
+    </ol>
+    <button class="btn btn-lima" type="button" onclick="this.closest('dialog').close()">Entendido</button>
+  </dialog>
+
+  <script src="data/carta-data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
