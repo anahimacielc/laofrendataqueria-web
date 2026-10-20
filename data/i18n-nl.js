@@ -477,5 +477,6 @@
  "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole en paquetes de 500 gr al vacío: rinden para unos 20–25 tacos. Con salsas y tortillas para completar la comida.": "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor en kip met mole in vacuümverpakkingen van 500 gr: goed voor zo'n 20–25 tacos. Met salsa's en tortilla's om de maaltijd compleet te maken.",
  "Presentación de 500 gr, envasados al vacío. Rinden aproximadamente 20-25 tacos. Añade tortillas y salsas para completar la taquiza.": "Verpakking van 500 gr, vacuüm verpakt. Goed voor ongeveer 20-25 tacos. Voeg tortilla's en salsa's toe voor de complete taquiza.",
  "Guisos mexicanos artesanales en paquetes de 500 gr al vacío: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole. Rinden 20-25 tacos.": "Ambachtelijke Mexicaanse stoofgerechten in vacuümverpakkingen van 500 gr: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor en kip met mole. Goed voor 20-25 tacos.",
- "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "Verpakking van 500 gr, vacuümverpakt. Goed voor zo'n 20-25 tacos."
+ "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "Verpakking van 500 gr, vacuümverpakt. Goed voor zo'n 20-25 tacos.",
+ "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Mexicaanse tafel om te delen: taco's, nacho's, burrito's, quesadilla's en dranken"
 };

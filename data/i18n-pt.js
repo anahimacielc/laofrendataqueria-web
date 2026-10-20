@@ -477,5 +477,6 @@
  "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole en paquetes de 500 gr al vacío: rinden para unos 20–25 tacos. Con salsas y tortillas para completar la comida.": "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor e frango com mole em embalagens de 500 gr embaladas a vácuo: rendem cerca de 20–25 tacos. Com molhos e tortilhas para completar a refeição.",
  "Presentación de 500 gr, envasados al vacío. Rinden aproximadamente 20-25 tacos. Añade tortillas y salsas para completar la taquiza.": "Embalagens de 500 gr, embaladas a vácuo. Rendem aproximadamente 20-25 tacos. Acrescenta tortilhas e molhos para completar a taquiza.",
  "Guisos mexicanos artesanales en paquetes de 500 gr al vacío: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole. Rinden 20-25 tacos.": "Guisados mexicanos artesanais em embalagens de 500 gr a vácuo: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor e frango com mole. Rendem 20-25 tacos.",
- "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "Embalagem de 500 gr, embalada a vácuo. Dá para cerca de 20-25 tacos."
+ "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "Embalagem de 500 gr, embalada a vácuo. Dá para cerca de 20-25 tacos.",
+ "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Mesa mexicana para partilhar: tacos, nachos, burritos, quesadillas e bebidas"
 };

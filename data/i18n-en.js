@@ -477,5 +477,6 @@
  "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole en paquetes de 500 gr al vacío: rinden para unos 20–25 tacos. Con salsas y tortillas para completar la comida.": "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor and chicken with mole in vacuum-packed 500 gr pouches: each makes about 20–25 tacos. Add salsas and tortillas to complete the meal.",
  "Presentación de 500 gr, envasados al vacío. Rinden aproximadamente 20-25 tacos. Añade tortillas y salsas para completar la taquiza.": "500 gr vacuum-packed pouches. Each makes approximately 20-25 tacos. Add tortillas and salsas to complete your taquiza.",
  "Guisos mexicanos artesanales en paquetes de 500 gr al vacío: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole. Rinden 20-25 tacos.": "Artisan Mexican stews in vacuum-packed 500 gr pouches: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor and chicken with mole. Each makes 20-25 tacos.",
- "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "500 gr pack, vacuum-sealed. Makes about 20-25 tacos."
+ "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "500 gr pack, vacuum-sealed. Makes about 20-25 tacos.",
+ "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Mexican food table to share: tacos, nachos, burritos, quesadillas and drinks"
 };

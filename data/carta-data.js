@@ -136,10 +136,10 @@ window.CARTA = {
       id: "bebidas", nombre: { es: "Bebidas", en: "Drinks" },
       grupos: [
         { nombre: { es: "Coctelería", en: "Cocktails" }, items: [
-          { id: "chelada", nombre: { es: "Chelada", en: "Chelada" }, precio: 3.90 },
-          { id: "michelada", nombre: { es: "Michelada", en: "Michelada" }, precio: 4.50 },
+          { id: "chelada", foto: "assets/img/chelada.jpg", nombre: { es: "Chelada", en: "Chelada" }, precio: 3.90 },
+          { id: "michelada", foto: "assets/img/michelada.jpg", nombre: { es: "Michelada", en: "Michelada" }, precio: 4.50 },
           { id: "margarita-clasica", foto: "assets/img/margarita-clasica.jpg", nombre: { es: "Margarita clásica", en: "Classic margarita" }, precio: 6.00, popular: true },
-          { id: "margarita-tamarindo", nombre: { es: "Margarita de tamarindo", en: "Tamarind margarita" }, precio: 6.00 },
+          { id: "margarita-tamarindo", foto: "assets/img/margarita-tamarindo.jpg", nombre: { es: "Margarita de tamarindo", en: "Tamarind margarita" }, precio: 6.00 },
           { id: "paloma", nombre: { es: "Paloma", en: "Paloma" }, desc: { es: "Tequila, pomelo, lima y soda.", en: "Tequila, grapefruit, lime and soda." }, precio: 6.50, visible: false, propuesta: true },
           { id: "mezcalita", nombre: { es: "Mezcalita", en: "Mezcalita" }, desc: { es: "Mezcal, lima, naranja y sal de gusano.", en: "Mezcal, lime, orange and worm salt." }, precio: 6.90, visible: false, propuesta: true }
         ]},

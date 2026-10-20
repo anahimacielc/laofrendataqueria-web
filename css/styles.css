@@ -549,8 +549,8 @@ dialog.dlg-lateral { max-width: 480px; margin: 0 0 0 auto; height: 100svh; max-h
 .catrina { border-bottom: 1px solid var(--linea); }
 .bienvenida h1 { font-size: clamp(3rem, 10vw, 6.4rem); }
 .pasos-cta { margin: 26px 0 0; }
-.mesa { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 6px; aspect-ratio: 4/3; width: 100%; }
-.mesa img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; border-radius: 0; }
+
+
 .dos img.vert { aspect-ratio: 3/4; max-height: 520px; }
 .nota-envasado { color: var(--gris); font-size: .9rem; border-left: 2px solid var(--lima); padding-left: 12px; }
 .aviso-llevar { max-width: 62ch; color: #d7d8cf; margin: 0 0 6px; }

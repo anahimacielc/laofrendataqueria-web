@@ -477,5 +477,6 @@
  "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole en paquetes de 500 gr al vacío: rinden para unos 20–25 tacos. Con salsas y tortillas para completar la comida.": "Carnitas, cochinita pibil, suadero, birria, barbacoa, pastor et poulet au mole en barquettes de 500 gr sous vide : de quoi faire environ 20 à 25 tacos. Avec sauces et tortillas pour compléter le repas.",
  "Presentación de 500 gr, envasados al vacío. Rinden aproximadamente 20-25 tacos. Añade tortillas y salsas para completar la taquiza.": "Barquettes de 500 gr, conditionnées sous vide. Environ 20 à 25 tacos. Ajoutez tortillas et sauces pour compléter la taquiza.",
  "Guisos mexicanos artesanales en paquetes de 500 gr al vacío: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole. Rinden 20-25 tacos.": "Plats mexicains artisanaux en barquettes de 500 gr sous vide : carnitas, cochinita pibil, suadero, birria, barbacoa, pastor et poulet au mole. De quoi faire 20 à 25 tacos.",
- "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "Format de 500 gr, sous vide. Pour environ 20-25 tacos."
+ "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "Format de 500 gr, sous vide. Pour environ 20-25 tacos.",
+ "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Table mexicaine à partager : tacos, nachos, burritos, quesadillas et boissons"
 };
