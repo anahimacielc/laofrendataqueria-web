@@ -24,5 +24,5 @@
   b.addEventListener("click", () => set(!nav.classList.contains("open")));
   nav.addEventListener("click", e => { if (e.target.closest("a")) set(false); });
   document.addEventListener("keydown", e => e.key === "Escape" && set(false));
-  matchMedia("(min-width: 1261px)").addEventListener("change", () => set(false));
+  matchMedia("(min-width: 961px)").addEventListener("change", () => set(false));
 })();

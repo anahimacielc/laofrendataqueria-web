@@ -525,14 +525,14 @@ dialog.dlg-lateral { max-width: 480px; margin: 0 0 0 auto; height: 100svh; max-h
 
 /* ---- menú: etiquetas largas en una línea; hamburguesa por debajo de 1180 px ---- */
 .top nav a { white-space: nowrap; }
-@media (min-width: 1261px) {
+@media (min-width: 961px) {
   .top .wrap { width: min(1320px, 100% - 32px); }
   .top .logo { flex: none; }
   .top nav { flex-wrap: nowrap; gap: 0; }
   .top nav a { letter-spacing: .1em; padding: 9px 9px; font-size: .64rem; }
   .top nav a.cta-nav { padding: 9px 16px; margin-left: 6px; }
 }
-@media (max-width: 1260px) {
+@media (max-width: 960px) {
   .nav-toggle { display: grid; margin-left: auto; }
   .top .wrap { gap: 10px; padding-block: 9px; }
   .top .logo img { height: 40px; }
