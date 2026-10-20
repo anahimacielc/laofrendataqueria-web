@@ -610,3 +610,9 @@ dialog.dlg-lateral { max-width: 480px; margin: 0 0 0 auto; height: 100svh; max-h
 .galeria-fotos figure { margin: 0; }
 .galeria-fotos img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; filter: saturate(.95); }
 .galeria-fotos figcaption { font: 600 .66rem var(--texto); letter-spacing: .16em; text-transform: uppercase; color: var(--gris); padding-top: 8px; }
+
+/* Catrina de bienvenida: más ancha y más grande en pantallas anchas */
+@media (min-width: 821px) {
+  .catrina { overflow: hidden; }
+  .catrina img { width: 150%; max-width: none; margin-left: -25%; display: block; }
+}
