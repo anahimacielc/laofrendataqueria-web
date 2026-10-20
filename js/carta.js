@@ -29,7 +29,7 @@
       ayuda: "¿No sabes cuál elegir? Dinos qué sabores te gustan y te ayudamos a encontrar tu tequila o mezcal.",
       ayudaBtn: "Pregúntanos en caja", limpiar: "Empezar de nuevo", mezcalStyle: "Los mezcales se descubren por agave y origen: pregúntanos cuál tenemos hoy.",
       extras: "Para completar la experiencia", lema2: "Si la vida te da limones, pide sal y tequila", unidad: "Precios por chupito de 2 oz (≈ 59 ml)",
-      waMsg: "¡Hola! Quiero hacer un pedido para recoger.", actualizado: "Actualizado", ayudaAgave: "Elige una opción y mira abajo los chupitos que encajan.", opcion: "opción", opciones: "opciones", ver: "Ver" },
+      waMsg: "¡Hola! Quiero hacer un pedido para recoger.", actualizado: "Actualizado", oz: "Chupito 2 oz", sabores: "Sabores", ayudaAgave: "Elige una opción y mira abajo los chupitos que encajan.", opcion: "opción", opciones: "opciones", ver: "Ver" },
     en: { nav_inicio: "Home", nav_carta: "Menu", nav_llevar: "Takeaway", nav_contacto: "Contact",
       eyebrow: "Taste, feel and live", titulo: "Our menu",
       sub: "Mexican cooking with local ingredients and flavour from home. Order at the counter and we'll let you know when it's ready.",
@@ -52,7 +52,7 @@
       ayuda: "Not sure what to choose? Tell us what flavours you like and we'll help you find your tequila or mezcal.",
       ayudaBtn: "Ask us at the counter", limpiar: "Start over", mezcalStyle: "Mezcals are discovered by agave and origin: ask us which one we're pouring today.",
       extras: "To complete the experience", lema2: "If life gives you lemons, ask for salt and tequila", unidad: "Prices per 2 oz shot (≈ 59 ml)",
-      waMsg: "Hi! I'd like to place an order for pickup.", actualizado: "Updated", ayudaAgave: "Pick an option and see the shots that match below.", opcion: "option", opciones: "options", ver: "View" }
+      waMsg: "Hi! I'd like to place an order for pickup.", actualizado: "Updated", oz: "2 oz shot", sabores: "Flavours", ayudaAgave: "Pick an option and see the shots that match below.", opcion: "option", opciones: "options", ver: "View" }
   };
 
   const OL = window.OFRENDA_LANG;
@@ -147,8 +147,12 @@
   function filaAgave(it) {
     return h("div", { class: "fila-agave" + (state.resalta === it.id ? " resalta" : ""), id: "ag-" + it.id },
       h("h4", {}, agaveName(it), h("small", { text: [t(it.tipo), it.tipo === "tequila" ? t(it.estilo) : "", t(tier(it))].filter(Boolean).join(" · ") })),
-      h("div", { class: "precio", text: money(it.precio) }),
+      h("div", { class: "precio" }, money(it.precio), h("small", { class: "oz", text: t("oz") })),
       it.nota ? h("p", { text: L(it.nota) }) : null);
+  }
+  function avisoOz() {
+    const txt = L(C.agave.unidad), i = txt.indexOf("(");
+    return h("p", { class: "oz-aviso" }, h("strong", { text: (i > 0 ? txt.slice(0, i) : txt).trim() }), i > 0 ? h("span", { text: txt.slice(i) }) : null);
   }
   function seccionAgave() {
     const set = (k, v) => { state[k] = state[k] === v ? null : v; if (k === "tipo" && state.tipo === "mezcal") state.estilo = null; state.resalta = null; pintar(true); };
@@ -187,7 +191,7 @@
           h("span", { class: "flecha", "aria-hidden": "true", text: "↓" })) : null,
         h("div", { class: "resultado" },
           h("h3", { text: hayFiltro ? t("sugerencias") : t("agave") }),
-          h("p", { class: "nota", text: L(C.agave.unidad) }),
+          avisoOz(),
           lista.length ? lista.map(filaAgave) : h("p", { class: "vacio", text: t("sinRes") }),
           state.tipo === "mezcal" || (!state.tipo && lista.some(i => i.tipo === "mezcal")) ? h("p", { class: "nota", text: L(C.agave.mezcalNota) }) : null,
           hayFiltro ? h("button", { class: "reset", type: "button", onclick: () => { state.tipo = state.estilo = state.nivel = null; pintar(true); }, text: t("limpiar") }) : null),
@@ -196,10 +200,9 @@
           extras.map(e => h("div", { class: "fila-agave" },
             h("h4", {}, L(e.nombre), e.propuesta ? h("small", { text: t("nuevo") }) : null),
             e.precio != null ? h("div", { class: "precio", text: money(e.precio) }) : h("span"),
-            e.desc || e.nota ? h("p", { text: [L(e.desc), L(e.nota)].filter(Boolean).join(" ") }) : null))) : null,
+            e.desc || e.nota ? h("p", { text: [L(e.desc), L(e.nota)].filter(Boolean).join(" ") }) : null,
+            e.sabores ? h("div", { class: "sabores" }, h("span", { class: "sabores-t", text: t("sabores") }), e.sabores.map(s => h("span", { class: "sabor", text: L(s) }))) : null))) : null,
 
-        h("div", { class: "ayuda" }, h("p", { text: t("ayuda") }),
-          h("a", { class: "btn btn-borde", href: waLink(t("waMsg")), target: "_blank", rel: "noopener", text: t("ayudaBtn") })),
         h("p", { class: "lema", text: sa(t("lema2")) }),
         h("p", { class: "nota", style: "text-align:center;margin-top:18px", text: t("resp") })));
   }
@@ -211,7 +214,6 @@
   }
 
   // ---------- pintado general ----------
-  const waLink = msg => "https://wa.me/" + C.meta.whatsapp + "?text=" + encodeURIComponent(msg);
 
   function pintar(mantener) {
     const y = window.scrollY;
@@ -256,7 +258,6 @@
 
   function textosFijos() {
     $("#q").placeholder = t("ph");
-    $("#wa").href = waLink(t("waMsg"));
     const f = $("#filtros"); f.replaceChildren();
     [["veg", t("veg")], ["sinlac", t("sinlac")], ["singlu", t("singlu")]].forEach(([k, txt]) =>
       f.append(h("button", { type: "button", class: "chip", "aria-pressed": state[k], onclick: e => { state[k] = !state[k]; e.currentTarget.setAttribute("aria-pressed", state[k]); pintar(true); } }, txt)));

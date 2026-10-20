@@ -44,9 +44,11 @@
       h("span", { class: "g-info" }, h("span", { class: "g-nombre", text: L(it.nombre) }), h("span", { class: "g-precio", text: money(it.precio) })),
       cart[it.id] ? h("span", { class: "g-cant", text: "× " + cart[it.id] }) : null);
   }
+  const CHILE = () => { const s = document.createElementNS("http://www.w3.org/2000/svg", "svg"); s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("class", "chile"); s.setAttribute("aria-hidden", "true");
+    s.innerHTML = '<path d="M14.2 4.1c.1-1 .8-1.9 1.9-2.1M12.6 5.6c-2.9-.9-5.3 1-6.2 4-.8 2.6-.4 6 1.9 9.1 1.4 1.9 3.4 3 5.3 3.1 2.7.1 4.3-1.8 3.5-4.4-.7-2.3-.4-3.8-.9-6-.4-2-1.5-4.8-3.6-5.8z" fill="currentColor"/><path d="M12.6 5.6c.6-1.1 1.7-1.7 2.9-1.3" fill="none" stroke="#7ba04b" stroke-width="1.6" stroke-linecap="round"/>'; return s; };
   function filaComp(it) {
     const picor = it.picor ? h("span", { class: "picor", "aria-label": it.picor + "/5" }, [1, 2, 3, 4, 5].map(i => h("span", { class: i <= it.picor ? "" : "off", text: "●" }))) : null;
-    return h("div", { class: "g-fila" }, h("div", {}, h("div", { class: "g-nombre", text: L(it.nombre) }), picor), h("div", { class: "g-fila-der" }, h("span", { class: "g-precio", text: money(it.precio) }), stepper(it.id, true)));
+    return h("div", { class: "g-fila" }, h("div", {}, h("div", { class: "g-nombre" }, it.picor ? CHILE() : null, L(it.nombre)), picor), h("div", { class: "g-fila-der" }, h("span", { class: "g-precio", text: money(it.precio) }), stepper(it.id, true)));
   }
   function pintar() {
     const box = $("#lista"); box.replaceChildren();
@@ -54,7 +56,7 @@
       const its = g.items.filter(i => i.visible !== false); if (!its.length) return;
       const conFoto = its.every(i => i.foto);
       box.append(h("section", { class: "seccion" }, h("div", { class: "grupo" }, h("h3", { text: L(g.nombre) }),
-        conFoto ? h("div", { class: "g-grid" }, its.map(tarjeta)) : [g.galeria ? h("div", { class: "g-comp-fotos" }, g.galeria.map(s => h("img", { src: s, alt: L(g.nombre), loading: "lazy" }))) : null, its.map(filaComp)])));
+        conFoto ? h("div", { class: "g-grid" }, its.map(tarjeta)) : [g.galeria ? h("div", { class: "g-comp-fotos" }, g.galeria.map(s => h("img", { src: s, alt: L(g.nombre), loading: "lazy" }))) : null, its.map((it, i) => [it.picor && !its[i - 1]?.picor ? h("h4", { class: "g-sub-salsas" }, CHILE(), T("Salsas")) : null, filaComp(it)])])));
     });
     barra();
   }
@@ -88,9 +90,9 @@
         h("div", { class: "g-texto" },
           h("p", { class: "eyebrow", text: T("Guisos artesanales para llevar") }),
           h("h2", { text: OL.sa(L(it.nombre)) }),
-          h("p", { class: "g-precio-grande", text: money(it.precio) + " · 500 g" }),
+          h("p", { class: "g-precio-grande", text: money(it.precio) + " · 500 gr" }),
           it.desc ? h("p", { text: L(it.desc) }) : null,
-          h("p", { class: "nota", text: T("Presentación de 500 g, envasado al alto vacío. Rinde unos 20-25 tacos.") }),
+          h("p", { class: "nota", text: T("Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.") }),
           h("div", { class: "g-accion" }, localStepper(), h("button", { type: "button", class: "btn btn-lima", onclick: () => { const q = cantidadNueva; cantidadNueva = 1; d.close(); setQty(it.id, (cart[it.id] || 0) + q); aviso(q + " × " + L(it.nombre)); } }, T("Añadir al pedido"))),
           h("p", { class: "nota", text: T("Añade tortillas y salsas para completar tu taquiza.") }))));
   }
@@ -133,7 +135,7 @@
     // El mensaje va siempre en español: lo lee el equipo del restaurante.
     const es = new Intl.NumberFormat("es-ES", { style: "currency", currency: C.meta.moneda || "EUR" });
     const ls = lines().map(({ it, q }) => "• " + q + " × " + it.nombre.es + " — " + es.format(q * it.precio));
-    return ["¡Hola! Quiero hacer un pedido para recoger:", "", ...ls, "", "Total: " + es.format(total()),
+    return ["¡Hola! Quiero hacer un pedido de guisos y productos envasados para recoger:", "", ...ls, "", "Total: " + es.format(total()),
       campos.nombre ? "Nombre: " + campos.nombre : "", recogidaTexto() ? "Recoger: " + recogidaTexto() : "", campos.notas ? "Notas: " + campos.notas : "",
       "", "(Pedido desde la web · idioma del cliente: " + OL.get().toUpperCase() + ")"].filter((x, i, a) => !(x === "" && (a[i - 1] === "" || i === a.length - 1))).join("\n");
   }
@@ -142,7 +144,7 @@
     const cerrar = h("button", { type: "button", class: "dlg-cerrar", "aria-label": T("Cerrar"), onclick: () => d.close() }, "×");
     if (!ls.length) { d.replaceChildren(cerrar, h("div", { class: "g-pedido" }, h("h2", { text: OL.sa(T("Tu pedido")) }), h("p", { text: T("Tu pedido está vacío.") }))); return; }
     const campo = (k, ph, area) => { const e = h(area ? "textarea" : "input", { placeholder: T(ph), rows: area ? 2 : null, type: area ? null : "text", "aria-label": T(ph) }); e.value = campos[k]; e.addEventListener("input", () => { campos[k] = e.value; guardaCampos(); estadoWa(); }); return e; };
-    const wa = h("a", { class: "btn btn-lima", target: "_blank", rel: "noopener", text: T("Enviar pedido por WhatsApp") });
+    const wa = h("a", { class: "btn btn-lima", target: "_blank", rel: "noopener", text: T("Enviar pedido de guisos por WhatsApp") });
     const estadoWa = () => { const ok = listo(); wa.href = ok ? "https://wa.me/" + C.meta.whatsapp + "?text=" + encodeURIComponent(mensaje()) : "#"; wa.setAttribute("aria-disabled", ok ? "false" : "true"); wa.classList.toggle("off", !ok); const f = d.querySelector(".g-falta"); if (f) f.hidden = ok; };
     wa.addEventListener("click", e => { if (!listo()) e.preventDefault(); });
     const recogida = () => {
@@ -167,7 +169,7 @@
       wa,
       h("button", { type: "button", class: "btn btn-borde", onclick: () => d.close() }, T("Seguir añadiendo")),
       h("button", { type: "button", class: "reset", onclick: () => { cart = {}; save(); refrescar(); d.close(); }, text: T("Vaciar pedido") }),
-      h("p", { class: "nota", text: T("El pedido se envía por WhatsApp y se recoge en el local.") })));
+      h("p", { class: "nota", text: T("El pedido de guisos se envía por WhatsApp y se recoge en el local.") })));
     estadoWa();
   }
 

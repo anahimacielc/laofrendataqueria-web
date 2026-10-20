@@ -198,23 +198,23 @@ window.CARTA = {
   ],
 
   /* ---------- GUISOS PARA LLEVAR (se editan igual que la carta, pestaña "Guisos" en admin.html) ----------
-     Paquetes de 500 g al vacío · rinden aprox. 20-25 tacos */
+     Paquetes de 500 gr al vacío · rinden aprox. 20-25 tacos */
   guisos: {
     id: "guisos", nombre: { es: "Guisos artesanales", en: "Artisan stews" },
-    nota: { es: "Presentación de 500 g · rendimiento aproximado de 20-25 tacos.", en: "500 g pack · yields approx. 20-25 tacos." },
+    nota: { es: "Presentación de 500 gr · rendimiento aproximado de 20-25 tacos.", en: "500 gr pack · yields approx. 20-25 tacos." },
     grupos: [
-      { nombre: { es: "Guisos artesanales (500 g)", en: "Artisan stews (500 g)" }, items: [
+      { nombre: { es: "Guisos artesanales (500 gr)", en: "Artisan stews (500 gr)" }, items: [
         { id: "g-carnitas", foto: "assets/img/guiso-carnitas-textura.jpg", fotos: ["assets/img/guiso-carnitas-textura.jpg", "assets/img/guiso-carnitas.jpg", "assets/img/guiso-carnitas-2.jpg", "assets/img/guiso-carnitas-pack.jpg"], desc: { es: "Cerdo cocinado lentamente hasta quedar tierno y jugoso. Listo para calentar y servir en tortilla.", en: "Pork slow-cooked until tender and juicy. Ready to heat and serve in a tortilla." }, nombre: { es: "Carnitas", en: "Carnitas" }, precio: 16.50 },
         { id: "g-cochinita", foto: "assets/img/guiso-cochinita-textura.jpg", fotos: ["assets/img/guiso-cochinita-textura.jpg", "assets/img/guiso-cochinita.jpg", "assets/img/guiso-cochinita-2.jpg", "assets/img/guiso-cochinita-pack.jpg"], desc: { es: "Carne de cerdo desmechada, adobada en chiles secos no picantes, achiote y zumo de naranja. Cocida a baja temperatura en hoja de plátano.", en: "Shredded pork marinated in mild dried chillies, achiote and orange juice, slow-cooked in banana leaf." }, nombre: { es: "Cochinita pibil", en: "Cochinita pibil" }, precio: 16.50 },
         { id: "g-suadero", foto: "assets/img/guiso-suadero-textura.jpg", fotos: ["assets/img/guiso-suadero-textura.jpg", "assets/img/guiso-suadero.jpg", "assets/img/guiso-suadero-2.jpg", "assets/img/guiso-suadero-pack.jpg"], desc: { es: "Res tierna y jugosa, un clásico de los tacos de la Ciudad de México.", en: "Tender, juicy beef, a classic of Mexico City tacos." }, nombre: { es: "Suadero", en: "Suadero" }, precio: 16.50 }
       ]},
-      { nombre: { es: "Guisos artesanales premium (500 g)", en: "Premium artisan stews (500 g)" }, items: [
+      { nombre: { es: "Guisos artesanales premium (500 gr)", en: "Premium artisan stews (500 gr)" }, items: [
         { id: "g-birria", foto: "assets/img/guiso-birria-textura.jpg", fotos: ["assets/img/guiso-birria-textura.jpg", "assets/img/guiso-birria.jpg", "assets/img/guiso-birria-2.jpg", "assets/img/guiso-birria-pack.jpg"], desc: { es: "Ternera desmechada, adobada en chiles secos no picantes y cocida a fuego lento. Perfecta para tacos y quesabirria.", en: "Shredded beef marinated in mild dried chillies and slow-cooked. Perfect for tacos and quesabirria." }, nombre: { es: "Birria (ternera)", en: "Birria (beef)" }, precio: 23.50 },
         { id: "g-barbacoa", foto: "assets/img/guiso-barbacoa-textura.jpg", fotos: ["assets/img/guiso-barbacoa-textura.jpg", "assets/img/guiso-barbacoa.jpg", "assets/img/guiso-barbacoa-2.jpg", "assets/img/guiso-barbacoa-pack.jpg"], desc: { es: "Ternera cocida lentamente hasta quedar suave y melosa, un clásico de la cocina mexicana.", en: "Beef cooked slowly until soft and melting, a classic of Mexican cooking." }, nombre: { es: "Barbacoa (ternera)", en: "Barbacoa (beef)" }, precio: 23.50 },
         { id: "g-pastor", foto: "assets/img/guiso-pastor-textura.jpg", fotos: ["assets/img/guiso-pastor-textura.jpg", "assets/img/guiso-pastor.jpg", "assets/img/guiso-pastor-2.jpg", "assets/img/guiso-pastor-pack.jpg"], desc: { es: "Aguja de cerdo adobada en achiote, chiles secos no picantes y piña.", en: "Pork shoulder marinated in achiote, mild dried chillies and pineapple." }, nombre: { es: "Pastor", en: "Al pastor" }, precio: 23.50 },
         { id: "g-mole", foto: "assets/img/guiso-pollomole-textura.jpg", fotos: ["assets/img/guiso-pollomole-textura.jpg", "assets/img/guiso-pollomole.jpg", "assets/img/guiso-pollomole-2.jpg", "assets/img/guiso-pollomole-pack.jpg"], desc: { es: "Pollo en salsa de mole, de sabor profundo e intenso.", en: "Chicken in mole sauce, deep and intense in flavour." }, nombre: { es: "Pollo con mole", en: "Chicken with mole" }, precio: 23.50 }
       ]},
-      { nombre: { es: "Complementos", en: "Extras" }, galeria: ["assets/img/comp-tortillas.jpg", "assets/img/comp-salsas.jpg", "assets/img/comp-set.jpg"], items: [
+      { nombre: { es: "Complementos", en: "Extras" }, galeria: ["assets/img/guisos-caja.jpg", "assets/img/comp-tortillas.jpg", "assets/img/comp-salsas.jpg", "assets/img/guisos-1.jpg"], items: [
         { id: "g-tortillas", nombre: { es: "Tortillas taqueras (25 unidades)", en: "Taco tortillas (25 pieces)" }, precio: 6.50 },
         { id: "g-salsa-tomatillo", nombre: { es: "Salsa tomatillo verde 100 ml", en: "Green tomatillo salsa 100 ml" }, precio: 2.00, picor: 1 },
         { id: "g-salsa-aguacate", nombre: { es: "Salsa de aguacate y chile verde 100 ml", en: "Avocado & green chilli salsa 100 ml" }, precio: 2.00, picor: 2 },
@@ -255,8 +255,8 @@ window.CARTA = {
     extras: [
       { id: "shot-banderita", nombre: { es: "Shot Banderita", en: "Shot Banderita" },
         desc: { es: "Tequila, sangrita y lima (2 oz). Así se toma de verdad en México.", en: "Tequila, sangrita and lime (2 oz). The way it's really drunk in Mexico." }, precio: null, nota: { es: "Se sirve con el tequila que elijas", en: "Served with the tequila of your choice" } },
-      { id: "crema-chupito", nombre: { es: "Crema de tequila · chupito", en: "Tequila cream · shot" }, precio: 3.00 },
-      { id: "crema-vaso", nombre: { es: "Crema de tequila · vaso", en: "Tequila cream · glass" }, precio: 4.50 },
+      { id: "crema-chupito", sabores: [{ es: "Fresa", en: "Strawberry" }, { es: "Durazno", en: "Peach" }, { es: "Maracuyá", en: "Passion fruit" }], nombre: { es: "Crema de tequila · chupito", en: "Tequila cream · shot" }, precio: 3.00 },
+      { id: "crema-vaso", sabores: [{ es: "Fresa", en: "Strawberry" }, { es: "Durazno", en: "Peach" }, { es: "Maracuyá", en: "Passion fruit" }], nombre: { es: "Crema de tequila · vaso", en: "Tequila cream · glass" }, precio: 4.50 },
       { id: "vuelo", nombre: { es: "Vuelo de agave", en: "Agave flight" },
         desc: { es: "Tres chupitos de 1 oz para comparar: un blanco, un reposado y un cristalino. Ideal para descubrir tu estilo.", en: "Three 1 oz tastings to compare: a blanco, a reposado and a cristalino. The best way to find your style." },
         precio: 16.90, visible: false, propuesta: true }
