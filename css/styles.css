@@ -613,4 +613,4 @@ dialog.dlg-lateral { max-width: 480px; margin: 0 0 0 auto; height: 100svh; max-h
 
 /* Catrina de bienvenida: imagen ancha a todo el ancho (alta resolución) */
 .catrina img { display: block; width: 100%; max-width: none; height: auto; margin: 0; }
-@media (max-width: 820px) { .catrina img { width: 180%; margin-left: -40%; } }
+@media (max-width: 820px) { .catrina img { width: 165%; margin-left: -30%; } }
