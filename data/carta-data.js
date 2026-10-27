@@ -150,7 +150,7 @@ window.CARTA = {
         ]},
         { nombre: { es: "Vino", en: "Wine" }, items: [
           { id: "vino-tinto", foto: "assets/img/vino-tinto.jpg", nombre: { es: "Vino tinto de la casa", en: "House red wine" }, precios: [{ etiqueta: "copa", precio: 2.80 }, { etiqueta: "botella", precio: 12.50 }] },
-          { id: "vino-blanco", nombre: { es: "Vino blanco de la casa", en: "House white wine" }, precios: [{ etiqueta: "copa", precio: 2.80 }, { etiqueta: "botella", precio: 12.50 }] }
+          { id: "vino-blanco", foto: "assets/img/vino-blanco.jpg", nombre: { es: "Vino blanco de la casa", en: "House white wine" }, precios: [{ etiqueta: "copa", precio: 2.80 }, { etiqueta: "botella", precio: 12.50 }] }
         ], columnas: { es: ["Copa", "Botella"], en: ["Glass", "Bottle"] } },
         { nombre: { es: "Cervezas Alhambra", en: "Alhambra beers" }, items: [
           { id: "alh-especial", nombre: { es: "Alhambra Especial", en: "Alhambra Especial" }, precios: [{ etiqueta: "cana", precio: 1.90 }, { etiqueta: "doble", precio: 2.50 }, { etiqueta: "tanque", precio: 4.20 }] },
