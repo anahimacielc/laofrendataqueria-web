@@ -47,8 +47,8 @@
   const CHILE = () => { const s = document.createElementNS("http://www.w3.org/2000/svg", "svg"); s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("class", "chile"); s.setAttribute("aria-hidden", "true");
     s.innerHTML = '<path d="M14.2 4.1c.1-1 .8-1.9 1.9-2.1M12.6 5.6c-2.9-.9-5.3 1-6.2 4-.8 2.6-.4 6 1.9 9.1 1.4 1.9 3.4 3 5.3 3.1 2.7.1 4.3-1.8 3.5-4.4-.7-2.3-.4-3.8-.9-6-.4-2-1.5-4.8-3.6-5.8z" fill="currentColor"/><path d="M12.6 5.6c.6-1.1 1.7-1.7 2.9-1.3" fill="none" stroke="#7ba04b" stroke-width="1.6" stroke-linecap="round"/>'; return s; };
   function filaComp(it) {
-    const picor = it.picor ? h("span", { class: "picor", "aria-label": it.picor + "/5" }, [1, 2, 3, 4, 5].map(i => h("span", { class: i <= it.picor ? "" : "off", text: "●" }))) : null;
-    return h("div", { class: "g-fila" }, h("div", {}, h("div", { class: "g-nombre" }, it.picor ? CHILE() : null, L(it.nombre)), picor), h("div", { class: "g-fila-der" }, h("span", { class: "g-precio", text: money(it.precio) }), stepper(it.id, true)));
+    const picor = it.picor ? h("span", { class: "picor", role: "img", "aria-label": T("Picante") + " " + it.picor + "/5" }, [1, 2, 3, 4, 5].map(i => { const c = CHILE(); if (i > it.picor) c.classList.add("off"); return c; })) : null;
+    return h("div", { class: "g-fila" }, h("div", {}, h("div", { class: "g-nombre", text: L(it.nombre) }), picor), h("div", { class: "g-fila-der" }, h("span", { class: "g-precio", text: money(it.precio) }), stepper(it.id, true)));
   }
   function pintar() {
     const box = $("#lista"); box.replaceChildren();
@@ -56,7 +56,7 @@
       const its = g.items.filter(i => i.visible !== false); if (!its.length) return;
       const conFoto = its.every(i => i.foto);
       box.append(h("section", { class: "seccion" }, h("div", { class: "grupo" }, h("h3", { text: L(g.nombre) }),
-        conFoto ? h("div", { class: "g-grid" }, its.map(tarjeta)) : [g.galeria ? h("div", { class: "g-comp-fotos" }, g.galeria.map(s => h("img", { src: s, alt: L(g.nombre), loading: "lazy" }))) : null, its.map((it, i) => [it.picor && !its[i - 1]?.picor ? h("h4", { class: "g-sub-salsas" }, CHILE(), T("Salsas")) : null, filaComp(it)])])));
+        conFoto ? h("div", { class: "g-grid" }, its.map(tarjeta)) : [g.galeria ? h("div", { class: "g-comp-fotos" }, g.galeria.map(s => h("img", { src: s, alt: L(g.nombre), loading: "lazy" }))) : null, its.map((it, i) => [it.picor && !its[i - 1]?.picor ? [h("h4", { class: "g-sub-salsas" }, CHILE(), T("Salsas")), h("p", { class: "g-picor-leyenda", text: T("Cuantos más chiles rellenos, más pica.") })] : null, filaComp(it)])])));
     });
     barra();
   }

@@ -17,7 +17,7 @@ window.CARTA = {
     impuestos: { es: "Impuestos incluidos en el precio.", en: "Taxes included in the price." },
     whatsapp: "34603829035",
     // Rango automático del tequila/mezcal según precio del chupito de 2 oz
-    tiers: { economico: 7, top: 10 }   // < 7 económico · < 10 top · ≥ 10 premium
+    tiers: { clasico: 7, top: 10 }   // < 7 clásico · < 10 top · ≥ 10 premium
   },
 
   alergenos: {
@@ -149,9 +149,9 @@ window.CARTA = {
           { id: "cubata-vodka", nombre: { es: "Vodka", en: "Vodka" }, precio: 7.20 }
         ]},
         { nombre: { es: "Vino", en: "Wine" }, items: [
-          { id: "vino-tinto", foto: "assets/img/vino-tinto.jpg", nombre: { es: "Copa de vino tinto", en: "Glass of red wine" }, precio: 2.80 },
-          { id: "vino-blanco", nombre: { es: "Copa de vino blanco", en: "Glass of white wine" }, precio: 2.80 }
-        ]},
+          { id: "vino-tinto", foto: "assets/img/vino-tinto.jpg", nombre: { es: "Vino tinto de la casa", en: "House red wine" }, precios: [{ etiqueta: "copa", precio: 2.80 }, { etiqueta: "botella", precio: 12.50 }] },
+          { id: "vino-blanco", nombre: { es: "Vino blanco de la casa", en: "House white wine" }, precios: [{ etiqueta: "copa", precio: 2.80 }, { etiqueta: "botella", precio: 12.50 }] }
+        ], columnas: { es: ["Copa", "Botella"], en: ["Glass", "Bottle"] } },
         { nombre: { es: "Cervezas Alhambra", en: "Alhambra beers" }, items: [
           { id: "alh-especial", nombre: { es: "Alhambra Especial", en: "Alhambra Especial" }, precios: [{ etiqueta: "cana", precio: 1.90 }, { etiqueta: "doble", precio: 2.50 }, { etiqueta: "tanque", precio: 4.20 }] },
           { id: "alh-roja", nombre: { es: "Alhambra Roja", en: "Alhambra Roja" }, precios: [{ etiqueta: "cana", precio: 2.10 }, { etiqueta: "doble", precio: 2.70 }, { etiqueta: "tanque", precio: 4.40 }] },
@@ -162,6 +162,7 @@ window.CARTA = {
         ], columnas: { es: ["Caña", "Doble", "Tanque"], en: ["Small", "Double", "Tank"] } },
         { nombre: { es: "Cervezas importadas", en: "Imported beers" }, items: [
           { id: "corona", nombre: { es: "Corona", en: "Corona" }, precio: 3.20 },
+          { id: "corona-00", nombre: { es: "Corona 0,0", en: "Corona 0,0" }, precio: 3.20 },
           { id: "pacifico", nombre: { es: "Pacífico", en: "Pacífico" }, precio: 3.20 },
           { id: "modelo-especial", nombre: { es: "Modelo Especial", en: "Modelo Especial" }, precio: 3.20 },
           { id: "negra-modelo", nombre: { es: "Negra Modelo", en: "Negra Modelo" }, precio: 3.20 },
@@ -212,7 +213,7 @@ window.CARTA = {
         { id: "g-birria", foto: "assets/img/guiso-birria-textura.jpg", fotos: ["assets/img/guiso-birria-textura.jpg", "assets/img/guiso-birria.jpg", "assets/img/guiso-birria-2.jpg", "assets/img/guiso-birria-pack.jpg"], desc: { es: "Ternera desmechada, adobada en chiles secos no picantes y cocida a fuego lento. Perfecta para tacos y quesabirria.", en: "Shredded beef marinated in mild dried chillies and slow-cooked. Perfect for tacos and quesabirria." }, nombre: { es: "Birria (ternera)", en: "Birria (beef)" }, precio: 23.50 },
         { id: "g-barbacoa", foto: "assets/img/guiso-barbacoa-textura.jpg", fotos: ["assets/img/guiso-barbacoa-textura.jpg", "assets/img/guiso-barbacoa.jpg", "assets/img/guiso-barbacoa-2.jpg", "assets/img/guiso-barbacoa-pack.jpg"], desc: { es: "Ternera cocida lentamente hasta quedar suave y melosa, un clásico de la cocina mexicana.", en: "Beef cooked slowly until soft and melting, a classic of Mexican cooking." }, nombre: { es: "Barbacoa (ternera)", en: "Barbacoa (beef)" }, precio: 23.50 },
         { id: "g-pastor", foto: "assets/img/guiso-pastor-textura.jpg", fotos: ["assets/img/guiso-pastor-textura.jpg", "assets/img/guiso-pastor.jpg", "assets/img/guiso-pastor-2.jpg", "assets/img/guiso-pastor-pack.jpg"], desc: { es: "Aguja de cerdo adobada en achiote, chiles secos no picantes y piña.", en: "Pork shoulder marinated in achiote, mild dried chillies and pineapple." }, nombre: { es: "Pastor", en: "Al pastor" }, precio: 23.50 },
-        { id: "g-mole", foto: "assets/img/guiso-pollomole-textura.jpg", fotos: ["assets/img/guiso-pollomole-textura.jpg", "assets/img/guiso-pollomole.jpg", "assets/img/guiso-pollomole-2.jpg", "assets/img/guiso-pollomole-pack.jpg"], desc: { es: "Pollo en salsa de mole, de sabor profundo e intenso.", en: "Chicken in mole sauce, deep and intense in flavour." }, nombre: { es: "Pollo con mole", en: "Chicken with mole" }, precio: 23.50 }
+        { id: "g-mole", foto: "assets/img/guiso-pollomole-textura.jpg", fotos: ["assets/img/guiso-pollomole-textura.jpg", "assets/img/guiso-pollomole-pack.jpg"], desc: { es: "Pollo en salsa de mole, de sabor profundo e intenso.", en: "Chicken in mole sauce, deep and intense in flavour." }, nombre: { es: "Pollo con mole", en: "Chicken with mole" }, precio: 23.50 }
       ]},
       { nombre: { es: "Complementos", en: "Extras" }, galeria: ["assets/img/guisos-caja.jpg", "assets/img/comp-tortillas.jpg", "assets/img/comp-salsas.jpg", "assets/img/guisos-1.jpg"], items: [
         { id: "g-tortillas", nombre: { es: "Tortillas taqueras (25 unidades)", en: "Taco tortillas (25 pieces)" }, precio: 6.50 },
@@ -226,7 +227,7 @@ window.CARTA = {
   },
 
   /* ---------- TEQUILA Y MEZCAL ----------
-     precio = chupito de 2 oz (≈59 ml). El rango (económico/top/premium)
+     precio = chupito de 2 oz (≈59 ml). El rango (clásico/top/premium)
      se calcula solo a partir del precio, ver meta.tiers.
      tipo: tequila | mezcal      estilo: blanco | reposado | cristalino | joven */
   agave: {
@@ -271,6 +272,8 @@ window.CARTA = {
     gajo:    { es: "con patatas gajo", en: "with wedges" },
     cana:    { es: "caña", en: "small" },
     doble:   { es: "doble", en: "double" },
-    tanque:  { es: "tanque", en: "tank" }
+    tanque:  { es: "tanque", en: "tank" },
+    copa:    { es: "copa", en: "glass" },
+    botella: { es: "botella", en: "bottle" }
   }
 };

@@ -298,7 +298,7 @@ html, body { max-width: 100%; overflow-x: clip; }
 .lang-select:focus { outline: none; border-color: var(--lima); }
 .lang-select option { background: #000; color: var(--crema); }
 @media (max-width: 820px) { .lang-select { margin-left: auto; } .nav-toggle { margin-left: 0 !important; } }
-h1, h2, h3, h4 { overflow-wrap: anywhere; hyphens: auto; }
+h1, h2, h3, h4 { overflow-wrap: break-word; hyphens: manual; word-break: normal; }
 .btn { text-align: center; }
 
 .packs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(150px, 45%), 1fr)); gap: 14px; margin-top: 18px; }
@@ -575,7 +575,7 @@ dialog.dlg-lateral { max-width: 480px; margin: 0 0 0 auto; height: 100svh; max-h
 /* ---- guisos y productos envasados ---- */
 .hero-guisos { text-align: left; padding: 70px 0 54px; }
 .hero-guisos .hg { display: grid; grid-template-columns: 1.15fr .85fr; gap: 44px; align-items: center; }
-.hero-guisos .titulo-script { font-size: clamp(2.5rem, 5.6vw, 4.2rem); line-height: 1.04; margin-bottom: 10px; text-wrap: balance; }
+.hero-guisos .titulo-script { font-size: clamp(2.1rem, 4.4vw, 3.5rem); overflow-wrap: normal; hyphens: none; line-height: 1.04; margin-bottom: 10px; text-wrap: balance; }
 .hg-sub { font: 700 .82rem var(--texto); letter-spacing: .2em; text-transform: uppercase; color: var(--lima-claro); margin: 0 0 18px; }
 .hero-guisos .lead { max-width: 56ch; margin: 0 0 12px; }
 .hero-guisos .lead-aviso { color: var(--gris); font-size: .95rem; border-left: 2px solid var(--lima); padding-left: 12px; }
@@ -614,3 +614,24 @@ dialog.dlg-lateral { max-width: 480px; margin: 0 0 0 auto; height: 100svh; max-h
 /* Catrina de bienvenida: imagen ancha a todo el ancho (alta resolución) */
 .catrina img { display: block; width: 100%; max-width: none; height: auto; margin: 0; }
 @media (max-width: 820px) { .catrina img { width: 165%; margin-left: -30%; } }
+
+/* ---- ajustes de la última revisión ---- */
+/* acompañamientos de tequila y mezcal junto al aviso de 2 oz */
+.oz-aviso { display: grid; gap: 4px; }
+.oz-aviso .oz-linea { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.acomp { margin: 8px 0 0; padding-top: 8px; border-top: 1px solid rgba(141,166,100,.35); display: grid; gap: 3px; font-size: .92rem; color: #d7d8cf; }
+.acomp b { color: #fff; letter-spacing: .06em; text-transform: uppercase; font-size: .8rem; }
+/* ampliar fotos de la carta */
+.plato img.foto { cursor: zoom-in; }
+.plato img.foto:focus-visible { outline: 2px solid var(--lima); outline-offset: 2px; }
+dialog.visor { padding: 0; border: 0; background: rgba(0,0,0,.95); color: var(--crema); width: 100%; height: 100%; max-width: 100vw; max-height: 100dvh; margin: 0; }
+dialog.visor::backdrop { background: rgba(0,0,0,.9); }
+dialog.visor img { position: absolute; inset: 0; margin: auto; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; cursor: zoom-out; }
+.visor-x { position: absolute; top: calc(10px + env(safe-area-inset-top)); right: 10px; z-index: 2; width: 48px; height: 48px; border: 1px solid rgba(241,240,230,.5); background: rgba(0,0,0,.65); color: var(--crema); font: 300 2rem/1 var(--texto); cursor: pointer; border-radius: 0; }
+.visor-x:hover, .visor-x:focus-visible { background: var(--crema); color: #0a0a09; outline: none; }
+/* nivel de picante: chiles (rellenos = más picante) */
+.picor { display: inline-flex; gap: 3px; margin-top: 6px; }
+.picor .chile { width: 20px; height: 20px; margin: 0; color: #d6402e; }
+.picor .chile.off { color: #6d6f68; }
+.picor .chile.off path:first-child { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; }
+.g-picor-leyenda { margin: 0 0 6px; font-size: .8rem; color: var(--gris); }

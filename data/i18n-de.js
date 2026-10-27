@@ -478,5 +478,20 @@
  "Presentación de 500 gr, envasados al vacío. Rinden aproximadamente 20-25 tacos. Añade tortillas y salsas para completar la taquiza.": "500-g-Packungen, vakuumverpackt. Sie ergeben etwa 20-25 Tacos. Ergänze Tortillas und Salsas für die komplette Taquiza.",
  "Guisos mexicanos artesanales en paquetes de 500 gr al vacío: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole. Rinden 20-25 tacos.": "Handwerklich zubereitete mexikanische Schmorgerichte in vakuumierten 500-g-Packungen: Carnitas, Cochinita pibil, Suadero, Birria, Barbacoa, Pastor und Hähnchen mit Mole. Sie ergeben 20-25 Tacos.",
  "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "500-g-Packung, vakuumverpackt. Ergibt etwa 20-25 Tacos.",
- "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Mexikanischer Tisch zum Teilen: Tacos, Nachos, Burritos, Quesadillas und Getränke"
+ "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Mexikanischer Tisch zum Teilen: Tacos, Nachos, Burritos, Quesadillas und Getränke",
+ "¿Clásico, top o premium?": "Klassisch, Top oder Premium?",
+ "Clásico": "Klassisch",
+ "Los de siempre: directos, equilibrados y fáciles de disfrutar.": "Die Klassiker: geradlinig, ausgewogen und leicht zu genießen.",
+ "Tequila: acompañado de sangrita, lima y limón": "Tequila: serviert mit Sangrita, Limette und Zitrone",
+ "Mezcal: acompañado de rodajas de naranja y sal de chile": "Mezcal: serviert mit Orangenscheiben und Chilisalz",
+ "Ampliar foto": "Foto vergrößern",
+ "Picante": "Schärfe",
+ "Cuantos más chiles rellenos, más pica.": "Je mehr gefüllte Chilis, desto schärfer.",
+ "copa": "Glas",
+ "botella": "Flasche",
+ "Copa": "Glas",
+ "Botella": "Flasche",
+ "Vino tinto de la casa": "Roter Hauswein",
+ "Vino blanco de la casa": "Weißer Hauswein",
+ "Corona 0,0": "Corona 0,0"
 };

@@ -478,5 +478,20 @@
  "Presentación de 500 gr, envasados al vacío. Rinden aproximadamente 20-25 tacos. Añade tortillas y salsas para completar la taquiza.": "500 gr vacuum-packed pouches. Each makes approximately 20-25 tacos. Add tortillas and salsas to complete your taquiza.",
  "Guisos mexicanos artesanales en paquetes de 500 gr al vacío: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor y pollo con mole. Rinden 20-25 tacos.": "Artisan Mexican stews in vacuum-packed 500 gr pouches: carnitas, cochinita pibil, suadero, birria, barbacoa, pastor and chicken with mole. Each makes 20-25 tacos.",
  "Presentación de 500 gr, envasado al alto vacío. Rinde unos 20-25 tacos.": "500 gr pack, vacuum-sealed. Makes about 20-25 tacos.",
- "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Mexican food table to share: tacos, nachos, burritos, quesadillas and drinks"
+ "Mesa de comida mexicana para compartir: tacos, nachos, burritos, quesadillas y bebidas": "Mexican food table to share: tacos, nachos, burritos, quesadillas and drinks",
+ "¿Clásico, top o premium?": "Classic, top or premium?",
+ "Clásico": "Classic",
+ "Los de siempre: directos, equilibrados y fáciles de disfrutar.": "The staples: straightforward, balanced and easy to enjoy.",
+ "Tequila: acompañado de sangrita, lima y limón": "Tequila: served with sangrita, lime and lemon",
+ "Mezcal: acompañado de rodajas de naranja y sal de chile": "Mezcal: served with orange slices and chilli salt",
+ "Ampliar foto": "Enlarge photo",
+ "Picante": "Spiciness",
+ "Cuantos más chiles rellenos, más pica.": "The more filled-in chillies, the hotter it is.",
+ "copa": "glass",
+ "botella": "bottle",
+ "Copa": "Glass",
+ "Botella": "Bottle",
+ "Vino tinto de la casa": "House red wine",
+ "Vino blanco de la casa": "House white wine",
+ "Corona 0,0": "Corona 0,0"
 };

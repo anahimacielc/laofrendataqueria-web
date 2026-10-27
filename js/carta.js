@@ -15,21 +15,21 @@
       vacio: "No encontramos nada con esa búsqueda. Prueba con otra palabra.", pairs: "Acompáñalo con",
       agave: "Tequila y mezcal", guiaT: "Una pequeña guía para descubrir el agave", agaveH: "Tequila y Mezcal",
       lema1: "El tequila se disfruta. El mezcal se descubre.", resp: "Disfruta con responsabilidad.",
-      p1: "¿Tequila o mezcal?", p2: "¿Blanco, reposado o cristalino?", p3: "¿Económico, top o premium?",
+      p1: "¿Tequila o mezcal?", p2: "¿Blanco, reposado o cristalino?", p3: "¿Clásico, top o premium?",
       todos: "Todos", tequila: "Tequila", mezcal: "Mezcal",
       tequilaD: "Se elabora con agave azul. Puede ser fresco y herbal, o desarrollar notas dulces y de barrica según su estilo.",
       mezcalD: "Puede elaborarse con distintas variedades de agave. Sus sabores pueden ser herbales, minerales, frutales, terrosos o ahumados. No todos son ahumados.",
       blanco: "Blanco", blancoK: "Fresco", blancoD: "Poco o nada de contacto con madera. El agave es el protagonista: notas frescas, herbales y cítricas.",
       reposado: "Reposado", reposadoK: "Redondo", reposadoD: "Descansa al menos dos meses en barrica y puede sumar notas de madera, vainilla o especias.",
       cristalino: "Cristalino", cristalinoK: "Elegante", cristalinoD: "Es un tequila añejado que se filtra para eliminar gran parte del color. Mantiene parte de sus aromas y notas de barrica, con una apariencia cristalina.",
-      economico: "Económico", economicoD: "Una opción accesible, directa y fácil de disfrutar.",
+      clasico: "Clásico", clasicoD: "Los de siempre: directos, equilibrados y fáciles de disfrutar.",
       top: "Top", topD: "Un paso más en personalidad, equilibrio y complejidad.",
       premium: "Premium", premiumD: "Gama alta para disfrutar con calma y apreciar sus matices.",
       sugerencias: "Tu selección", sinRes: "Aún no tenemos esa combinación. Cambia algún filtro y vemos.",
       ayuda: "¿No sabes cuál elegir? Dinos qué sabores te gustan y te ayudamos a encontrar tu tequila o mezcal.",
       ayudaBtn: "Pregúntanos en caja", limpiar: "Empezar de nuevo", mezcalStyle: "Los mezcales se descubren por agave y origen: pregúntanos cuál tenemos hoy.",
       extras: "Para completar la experiencia", lema2: "Si la vida te da limones, pide sal y tequila", unidad: "Precios por chupito de 2 oz (≈ 59 ml)",
-      waMsg: "¡Hola! Quiero hacer un pedido para recoger.", actualizado: "Actualizado", oz: "Chupito 2 oz", sabores: "Sabores", ayudaAgave: "Elige una opción y mira abajo los chupitos que encajan.", opcion: "opción", opciones: "opciones", ver: "Ver" },
+      waMsg: "¡Hola! Quiero hacer un pedido para recoger.", actualizado: "Actualizado", acompT: "Tequila: acompañado de sangrita, lima y limón", acompM: "Mezcal: acompañado de rodajas de naranja y sal de chile", cerrar: "Cerrar", ampliar: "Ampliar foto", oz: "Chupito 2 oz", sabores: "Sabores", ayudaAgave: "Elige una opción y mira abajo los chupitos que encajan.", opcion: "opción", opciones: "opciones", ver: "Ver" },
     en: { nav_inicio: "Home", nav_carta: "Menu", nav_llevar: "Takeaway", nav_contacto: "Contact",
       eyebrow: "Taste, feel and live", titulo: "Our menu",
       sub: "Mexican cooking with local ingredients and flavour from home. Order at the counter and we'll let you know when it's ready.",
@@ -38,21 +38,21 @@
       vacio: "Nothing found. Try another word.", pairs: "Pair it with",
       agave: "Tequila & mezcal", guiaT: "A little guide to discovering agave", agaveH: "Tequila & Mezcal",
       lema1: "Tequila is to be enjoyed. Mezcal is to be discovered.", resp: "Please drink responsibly.",
-      p1: "Tequila or mezcal?", p2: "Blanco, reposado or cristalino?", p3: "Budget, top or premium?",
+      p1: "Tequila or mezcal?", p2: "Blanco, reposado or cristalino?", p3: "Classic, top or premium?",
       todos: "All", tequila: "Tequila", mezcal: "Mezcal",
       tequilaD: "Made from blue agave. It can be fresh and herbal, or develop sweet, barrel-aged notes depending on its style.",
       mezcalD: "Can be made from many agave varieties. Flavours can be herbal, mineral, fruity, earthy or smoky. Not all of them are smoky.",
       blanco: "Blanco", blancoK: "Fresh", blancoD: "Little or no time in wood. The agave is the star: fresh, herbal, citrusy notes.",
       reposado: "Reposado", reposadoK: "Smooth", reposadoD: "Rested at least two months in oak; may add notes of wood, vanilla or spice.",
       cristalino: "Cristalino", cristalinoK: "Elegant", cristalinoD: "An aged tequila filtered to remove most of its colour. Keeps part of its aromas and barrel notes, with a crystal-clear look.",
-      economico: "Budget", economicoD: "An accessible, straightforward option that's easy to enjoy.",
+      clasico: "Classic", clasicoD: "The staples: straightforward, balanced and easy to enjoy.",
       top: "Top", topD: "A step up in personality, balance and complexity.",
       premium: "Premium", premiumD: "High-end, to sip slowly and appreciate its nuances.",
       sugerencias: "Your picks", sinRes: "We don't have that combination yet. Change a filter and let's see.",
       ayuda: "Not sure what to choose? Tell us what flavours you like and we'll help you find your tequila or mezcal.",
       ayudaBtn: "Ask us at the counter", limpiar: "Start over", mezcalStyle: "Mezcals are discovered by agave and origin: ask us which one we're pouring today.",
       extras: "To complete the experience", lema2: "If life gives you lemons, ask for salt and tequila", unidad: "Prices per 2 oz shot (≈ 59 ml)",
-      waMsg: "Hi! I'd like to place an order for pickup.", actualizado: "Updated", oz: "2 oz shot", sabores: "Flavours", ayudaAgave: "Pick an option and see the shots that match below.", opcion: "option", opciones: "options", ver: "View" }
+      waMsg: "Hi! I'd like to place an order for pickup.", actualizado: "Updated", acompT: "Tequila: served with sangrita, lime and lemon", acompM: "Mezcal: served with orange slices and chilli salt", cerrar: "Close", ampliar: "Enlarge photo", oz: "2 oz shot", sabores: "Flavours", ayudaAgave: "Pick an option and see the shots that match below.", opcion: "option", opciones: "options", ver: "View" }
   };
 
   const OL = window.OFRENDA_LANG;
@@ -77,7 +77,7 @@
   }
   const sa = OL.sa;
   const norm = s => (s || "").toString().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-  const tier = it => it.precio < C.meta.tiers.economico ? "economico" : it.precio < C.meta.tiers.top ? "top" : "premium";
+  const tier = it => it.precio < C.meta.tiers.clasico ? "clasico" : it.precio < C.meta.tiers.top ? "top" : "premium";
   const agaveName = it => [it.marca, it.nombre].filter(Boolean).join(" ");
   const visible = it => it.visible !== false;
   const agaveById = id => C.agave.items.find(i => i.id === id);
@@ -91,6 +91,19 @@
       if (!state.q.split(/\s+/).every(w => hay.includes(w))) return false;
     }
     return true;
+  }
+
+  // ---------- foto ampliada (sin cargar nada extra: usa la misma imagen, ya descargada) ----------
+  function ampliar(src, alt) {
+    let d = document.getElementById("visor");
+    if (!d) {
+      d = h("dialog", { id: "visor", class: "visor" });
+      d.addEventListener("click", e => { if (e.target.tagName !== "BUTTON") d.close(); });
+      document.body.append(d);
+    }
+    d.setAttribute("aria-label", t("ampliar"));
+    d.replaceChildren(h("button", { type: "button", class: "visor-x", "aria-label": t("cerrar"), onclick: () => d.close() }, "×"), h("img", { src, alt }));
+    d.showModal();
   }
 
   // ---------- platos ----------
@@ -113,7 +126,7 @@
   function plato(it) {
     const mar = (it.maridaje || []).map(agaveById).filter(Boolean);
     return h("article", { class: "plato" + (it.foto ? " con-foto" : "") },
-      it.foto ? h("img", { class: "foto", src: it.foto, alt: L(it.nombre), loading: "lazy" }) : null,
+      it.foto ? h("img", { class: "foto", src: it.foto, alt: L(it.nombre), loading: "lazy", tabindex: "0", role: "button", "aria-label": t("ampliar") + ": " + L(it.nombre), onclick: e => ampliar(it.foto, L(it.nombre)), onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); ampliar(it.foto, L(it.nombre)); } } }) : null,
       h("div", {},
         h("h4", { text: L(it.nombre) }),
         it.desc ? h("p", { text: L(it.desc) }) : null,
@@ -138,7 +151,7 @@
 
   // ---------- guía del agave ----------
   const ESTILOS = ["blanco", "reposado", "cristalino"];
-  const NIVELES = ["economico", "top", "premium"];
+  const NIVELES = ["clasico", "top", "premium"];
 
   function opcion(key, sub, active, on, kicker) {
     return h("button", { type: "button", class: "opcion", "aria-pressed": active ? "true" : "false", onclick: on },
@@ -152,7 +165,10 @@
   }
   function avisoOz() {
     const txt = L(C.agave.unidad), i = txt.indexOf("(");
-    return h("p", { class: "oz-aviso" }, h("strong", { text: (i > 0 ? txt.slice(0, i) : txt).trim() }), i > 0 ? h("span", { text: txt.slice(i) }) : null);
+    const parte = s => { const j = s.indexOf(": "); return j > 0 ? [h("b", { text: s.slice(0, j) }), ": " + s.slice(j + 2)] : [s]; };
+    return h("div", { class: "oz-aviso" },
+      h("div", { class: "oz-linea" }, h("strong", { text: (i > 0 ? txt.slice(0, i) : txt).trim() }), i > 0 ? h("span", { text: txt.slice(i) }) : null),
+      h("p", { class: "acomp" }, h("span", {}, parte(t("acompT"))), h("span", {}, parte(t("acompM")))));
   }
   function seccionAgave() {
     const set = (k, v) => { state[k] = state[k] === v ? null : v; if (k === "tipo" && state.tipo === "mezcal") state.estilo = null; state.resalta = null; pintar(true); };

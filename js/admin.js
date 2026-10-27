@@ -88,11 +88,11 @@
   function panelAgave() {
     const p = h("div", {}); const refrescar = () => p.replaceWith(panelAgave());
     const A = data.agave, T = data.meta.tiers;
-    const tier = it => it.precio < T.economico ? "Económico" : it.precio < T.top ? "Top" : "Premium";
+    const tier = it => it.precio < T.clasico ? "Clásico" : it.precio < T.top ? "Top" : "Premium";
     p.append(h("div", { class: "caja" },
-      h("p", { class: "ayuda-adm", text: "El precio es el del chupito de 2 oz. El rango (Económico / Top / Premium) se calcula solo con estos límites y se actualiza al cambiar un precio." }),
+      h("p", { class: "ayuda-adm", text: "El precio es el del chupito de 2 oz. El rango (Clásico / Top / Premium) se calcula solo con estos límites y se actualiza al cambiar un precio." }),
       h("div", { class: "fila" },
-        campo("Económico por debajo de (€)", T.economico, v => T.economico = num(v), "fp", "number", { step: "0.10" }),
+        campo("Clásico por debajo de (€)", T.clasico, v => T.clasico = num(v), "fp", "number", { step: "0.10" }),
         campo("Top por debajo de (€)", T.top, v => T.top = num(v), "fp", "number", { step: "0.10" }))));
     A.items.forEach(it => p.append(h("div", { class: "caja" + (it.visible === false ? " oculto" : "") },
       h("div", { class: "fila", style: "margin-top:0" },
