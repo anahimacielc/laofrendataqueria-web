@@ -173,7 +173,7 @@ footer.pie a { color: var(--crema); }
 
 /* ---------- eventos / guisos ---------- */
 .hero-int { position: relative; isolation: isolate; padding: 90px 0 56px; text-align: center; }
-.hero-int::before { content: ""; position: absolute; inset: 0; background: var(--fondo) center/cover; z-index: -2; }
+.hero-int::before { content: ""; position: absolute; inset: 0; background: var(--fondo) var(--pos, center) / cover; z-index: -2; }
 .hero-int::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.7), rgba(0,0,0,.55) 50%, #000); z-index: -1; }
 .hero-int p.lead { max-width: 58ch; margin: 10px auto 22px; }
 .servicios { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 26px; }
@@ -635,3 +635,6 @@ dialog.visor img { position: absolute; inset: 0; margin: auto; max-width: 100%; 
 .picor .chile.off { color: #6d6f68; }
 .picor .chile.off path:first-child { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; }
 .g-picor-leyenda { margin: 0 0 6px; font-size: .8rem; color: var(--gris); }
+
+/* food truck nuevo (foto vertical): encuadre sobre el camión */
+img.ft { object-position: center 60%; }
