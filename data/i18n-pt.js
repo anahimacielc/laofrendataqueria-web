@@ -493,5 +493,6 @@
  "Botella": "Garrafa",
  "Vino tinto de la casa": "Vinho tinto da casa",
  "Vino blanco de la casa": "Vinho branco da casa",
- "Corona 0,0": "Corona 0,0"
+ "Corona 0,0": "Corona 0,0",
+ "Margarita clásica con borde de chile y rodaja de naranja": "Margarita clássica com rebordo de chile e rodela de laranja"
 };

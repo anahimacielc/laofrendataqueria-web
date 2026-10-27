@@ -493,5 +493,6 @@
  "Botella": "Bouteille",
  "Vino tinto de la casa": "Vin rouge de la maison",
  "Vino blanco de la casa": "Vin blanc de la maison",
- "Corona 0,0": "Corona 0,0"
+ "Corona 0,0": "Corona 0,0",
+ "Margarita clásica con borde de chile y rodaja de naranja": "Margarita classique avec bord au piment et tranche d'orange"
 };

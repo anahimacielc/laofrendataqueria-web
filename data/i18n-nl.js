@@ -493,5 +493,6 @@
  "Botella": "Fles",
  "Vino tinto de la casa": "Rode huiswijn",
  "Vino blanco de la casa": "Witte huiswijn",
- "Corona 0,0": "Corona 0,0"
+ "Corona 0,0": "Corona 0,0",
+ "Margarita clásica con borde de chile y rodaja de naranja": "Klassieke margarita met chilirand en een schijfje sinaasappel"
 };

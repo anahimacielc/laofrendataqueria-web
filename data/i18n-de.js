@@ -493,5 +493,6 @@
  "Botella": "Flasche",
  "Vino tinto de la casa": "Roter Hauswein",
  "Vino blanco de la casa": "Weißer Hauswein",
- "Corona 0,0": "Corona 0,0"
+ "Corona 0,0": "Corona 0,0",
+ "Margarita clásica con borde de chile y rodaja de naranja": "Klassische Margarita mit Chilirand und Orangenscheibe"
 };

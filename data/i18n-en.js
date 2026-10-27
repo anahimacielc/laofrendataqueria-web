@@ -493,5 +493,6 @@
  "Botella": "Bottle",
  "Vino tinto de la casa": "House red wine",
  "Vino blanco de la casa": "House white wine",
- "Corona 0,0": "Corona 0,0"
+ "Corona 0,0": "Corona 0,0",
+ "Margarita clásica con borde de chile y rodaja de naranja": "Classic margarita with a chilli rim and an orange slice"
 };
