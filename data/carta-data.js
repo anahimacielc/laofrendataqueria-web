@@ -7,7 +7,7 @@
    ============================================================ */
 window.CARTA = {
   meta: {
-    actualizado: "2026-10-09",
+    actualizado: "2026-11-26",
     moneda: "EUR",
     // Horario del local (0 = domingo … 6 = sábado), hora de Valencia. Lo usa el selector de recogida de guisos.
     horario: { "0": ["13:30-16:00", "19:30-23:00"], "1": [], "2": [], "3": ["19:30-23:00"], "4": ["19:30-23:00"], "5": ["13:30-16:00", "19:30-23:00"], "6": ["13:30-16:00", "19:30-23:00"] },
@@ -109,10 +109,10 @@ window.CARTA = {
           desc: { es: "140 gramos de carne de ternera preparada en casa, acompañada de queso cheddar, bacon, lechuga, tomate, cebolla y salsa especial de la casa.", en: "140 g house-made beef patty with cheddar, bacon, lettuce, tomato, onion and our special house sauce." },
           precios: [{ etiqueta: "solo", precio: 11.90 }, { etiqueta: "gajo", precio: 13.90 }], alergenos: ["lacteos", "gluten"], foto: "assets/img/burger-clasica.jpg" },
         { id: "burger-mexican", nombre: { es: "La Mexican", en: "La Mexican" },
-          desc: { es: "140 gramos de carne de ternera preparada en casa, piña asada, carne al pastor, salsa de queso cheddar, bacon, cilantro y cebolla.", en: "140 g house-made beef patty with grilled pineapple, al pastor pork, cheddar sauce, bacon, cilantro and onion." },
+          desc: { es: "140 gramos de carne de ternera preparada en casa, piña asada, carne al pastor, salsa de queso cheddar, guacamole, cilantro y cebolla.", en: "140 g house-made beef patty with grilled pineapple, al pastor pork, cheddar sauce, guacamole, cilantro and onion." },
           precios: [{ etiqueta: "solo", precio: 12.90 }, { etiqueta: "gajo", precio: 14.90 }], alergenos: ["lacteos", "gluten"], foto: "assets/img/burger-mexican.jpg", popular: true },
         { id: "burger-yucateca", foto: "assets/img/burger-yucateca-patatas.jpg", nombre: { es: "La Yucateca", en: "La Yucateca" },
-          desc: { es: "140 gramos de carne de ternera preparada en casa, cochinita pibil, encurtido de cebolla morada, bacon, salsa de queso cheddar y cilantro.", en: "140 g house-made beef patty with cochinita pibil, pickled red onion, bacon, cheddar sauce and cilantro." },
+          desc: { es: "140 gramos de carne de ternera preparada en casa, cochinita pibil, encurtido de cebolla morada, guacamole, salsa de queso cheddar y cilantro.", en: "140 g house-made beef patty with cochinita pibil, pickled red onion, guacamole, cheddar sauce and cilantro." },
           precios: [{ etiqueta: "solo", precio: 12.90 }, { etiqueta: "gajo", precio: 14.90 }], alergenos: ["lacteos", "gluten"], }
       ]}]
     },
